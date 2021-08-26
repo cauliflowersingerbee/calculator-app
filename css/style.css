@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    padding: 100px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.key-operator {
+    background-color: darkcyan;
+}
+
+.calculate {
+    background-color:orangered;
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
+
+.reg-keys {
+    background-color: lightgrey;
+    color:navy;
+}
+
+.key-operator, .reg-keys {
+    font-size: 80px;
+}
+
+.display {
+    font-size: 80px;
+    justify-content: right;
+}
+
+
+
